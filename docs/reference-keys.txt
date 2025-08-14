@@ -64,7 +64,6 @@ is-there-other-preparation-that-i-should-do-before-starting-the-course
 will-i-need-to-buy-a-calculator
 what-books-do-i-need-to-buy-for-the-course
 do-i-need-to-choose-my-own-summer-project-topic
-who-should-i-contact-if-i-have-any-further-questions
 contact-info
 mandatory-training
 data-protection-awareness

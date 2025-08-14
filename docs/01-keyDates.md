@@ -17,13 +17,11 @@ Below are provisional Imperial College terms dates for 2025-26. **Please note th
 | Induction Week    | 29 September 2025 | 3 October 2025         |
 | Term 1            | 6 October 2025    | 12 December 2025       |
 | Exam period 1     | 5 January 2026    | 9 January 2026         |
-| Term 2            | 12 January 2026   | 20 March 2026          |
-| Exam period 2 (Final Exams)     | 13 April 2026     | 17 April 2026          |
-| Exam period 2 (Project Due)     | 20 April 2026     | 24 April 2025          |
-| Term 3            | 11 May 2026.      | 11 September 2026      |
+| Term 2            | 12 January 2026   | 27 March 2026          |
+| Exam period 2 (Final Exams)     | 20 April 2026     | 24 April 2026          |
+| Exam period 2 (Project Due)     | 2 May 2026     | 5 May 2026          |
+| Term 3            | 11 May 2026      | 11 September 2026      |
 
-
-Note: There will be a week of recorded material to watch from 23 March - 27 March 2026, but you will not be required to be in London during that week and there will be no in person sessions.
 
 ***Examination dates***
 
@@ -31,7 +29,7 @@ Note: There will be a week of recorded material to watch from 23 March - 27 Marc
 |:-----------------:|:-----------------:|:----------------------:|
 | Exam Period 1     | 5 January 2026    | 9 January 2026         |
 | Exam Period 2 (Final Exams)     | 20 April 2026     | 24 April 2026          |
-| Exam Period 2 (Project Due)     | 2 May 2026     | 5 May 2025          |
+| Exam Period 2 (Project Due)     | 2 May 2026     | 5 May 2026          |
 | Final Presentation Date     | 7 September 2026    | 11 September 2026         |
 
 Note: You must be in London for all assessments.

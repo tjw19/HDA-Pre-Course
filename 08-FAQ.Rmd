@@ -24,7 +24,7 @@ Official documents need to be sent to [Registry](https://www.imperial.ac.uk/admi
 
 ## 5. When does the course start?
 
-The MSc Health Data Analytics and Machine Learning Course starts on 30th of September 2024. Further details of the first week of term (i.e. ‘Induction Week’) will be sent via email. 
+The MSc Health Data Analytics and Machine Learning Course starts on 28th of September 2025. Further details of the first week of term (i.e. ‘Induction Week’) will be sent via email. 
 
 For international students, Imperial College London organises some orientation events prior to the official start of the course. Please visit the [International Students Webpages](https://www.imperial.ac.uk/study/international-students/)  for further information. 
 
@@ -68,11 +68,3 @@ There is a core reading list of texts in addition to the books recommended for y
 
 The summer months in Term 3 are dedicated to full-time work on a research project. We provide students with a list of potential summer project topics at the start of Term 2 (in January), and advise that you start thinking about possible projects before this. Alternatively, you may wish to submit your own project ideas for approval. Your idea for a summer project, must be supported by a member of staff within the School of Public Health who is also willing to supervise the project. If you already have project ideas in mind, please discuss these with your personal tutor or the course organisers soon after your arrival. 
 
-## 13. Who should I contact if I have any further questions? 
-
-If you have any further questions, please consult the following key contacts or resources:
-
-*	The [Registry](https://www.imperial.ac.uk/admin-services/registry/) team for queries on your application, outstanding conditions, fee status, and registration status.
-*	Postgraduate Education Co-ordinator, [Ms Jo Tite](https://www.imperial.ac.uk/people/j.tite) (email: j.tite at imperial.ac.uk), for queries on timetables, induction week or any other administrative issues
-*	MSc HDA-ML Course Co-lead and organiser for queries on the course content, [Dr Sabrina Rodrigues](https://www.imperial.ac.uk/people/s.andrade-rodrigues) (email: s.andrade-rodrigues at imperial.ac.uk) 
-*	Please familiarise yourself with information about postgraduate studies, and further information collated for new postgraduate students before you arrive. 

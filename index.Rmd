@@ -50,6 +50,6 @@ Please spend 30 minutes to an hour, 5-6 days a week, reviewing the suggested pre
 
 Most softwares, research projects, and programs adopt iterative project development. This is why there are multiple versions of software. This guide also has versions. Please see the [change log](#change-log) for details on what has changed in each version update.
 
-The current version of this guide is **v.0.0**
+The current version of this guide is **v.0.1**
 
 
