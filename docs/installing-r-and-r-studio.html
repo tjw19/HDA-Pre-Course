@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 Installing R and R Studio | Pre Course Material</title>
+  <meta name="description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 10 Installing R and R Studio | Pre Course Material" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/imgs/Imperial.png" />
+  <meta property="og:description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 10 Installing R and R Studio | Pre Course Material" />
+  
+  <meta name="twitter:description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  <meta name="twitter:image" content="/imgs/Imperial.png" />
+
+<meta name="author" content="Health Data Analytics and Machine Learning" />
+
+
+<meta name="date" content="2025-08-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mandatory-training.html"/>
+<link rel="next" href="installing-python-anaconda-and-vscode.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">HDA Precourse Material</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to HDA</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#what-makes-hda-unique"><i class="fa fa-check"></i><b>0.1</b> What Makes HDA Unique</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#program-overview"><i class="fa fa-check"></i><b>0.2</b> Program Overview</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#getting-ready-for-the-program"><i class="fa fa-check"></i><b>0.3</b> Getting Ready For the Program</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#iterative-project-development"><i class="fa fa-check"></i><b>0.4</b> Iterative Project Development</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html"><i class="fa fa-check"></i><b>1</b> Term Dates and Time Requirements</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html#imperial-college-term-dates"><i class="fa fa-check"></i><b>1.1</b> Imperial College Term Dates</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="general-advice.html"><a href="general-advice.html"><i class="fa fa-check"></i><b>2</b> General Advice</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-advice.html"><a href="general-advice.html#advice-from-the-teaching-team"><i class="fa fa-check"></i><b>2.1</b> Advice from the Teaching Team</a></li>
+<li class="chapter" data-level="2.2" data-path="general-advice.html"><a href="general-advice.html#advice-from-previous-hda-students"><i class="fa fa-check"></i><b>2.2</b> Advice from previous HDA students</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="general-advice.html"><a href="general-advice.html#before-starting-the-course"><i class="fa fa-check"></i><b>2.2.1</b> Before starting the course</a></li>
+<li class="chapter" data-level="2.2.2" data-path="general-advice.html"><a href="general-advice.html#throughout-the-course"><i class="fa fa-check"></i><b>2.2.2</b> Throughout the course</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html"><i class="fa fa-check"></i><b>3</b> Getting to Know Your Computer</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#Computer-Specifications"><i class="fa fa-check"></i><b>3.1</b> Computer Specifications</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#mac-computer-specifications"><i class="fa fa-check"></i><b>3.1.1</b> Mac Computer Specifications</a></li>
+<li class="chapter" data-level="3.1.2" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#windows-computer-specifications"><i class="fa fa-check"></i><b>3.1.2</b> Windows Computer Specifications</a></li>
+<li class="chapter" data-level="3.1.3" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#linux-computer-specifications"><i class="fa fa-check"></i><b>3.1.3</b> Linux Computer Specifications</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#the-black-box"><i class="fa fa-check"></i><b>3.2</b> The Black Box</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#demystifying-the-terminal"><i class="fa fa-check"></i><b>3.2.1</b> Demystifying the Terminal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html"><i class="fa fa-check"></i><b>4</b> Setting Up Your Computer</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#bash"><i class="fa fa-check"></i><b>4.1</b> Bash</a></li>
+<li class="chapter" data-level="4.2" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#r"><i class="fa fa-check"></i><b>4.2</b> R</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#using-a-gui"><i class="fa fa-check"></i><b>4.2.1</b> Using a GUI</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#python"><i class="fa fa-check"></i><b>4.3</b> Python</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#python-ides"><i class="fa fa-check"></i><b>4.3.1</b> Python IDEs</a></li>
+<li class="chapter" data-level="4.3.2" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#juypter-notebook-exercise"><i class="fa fa-check"></i><b>4.3.2</b> Juypter Notebook Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#sql"><i class="fa fa-check"></i><b>4.4</b> SQL</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#dbeaver"><i class="fa fa-check"></i><b>4.4.1</b> DBeaver</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#git"><i class="fa fa-check"></i><b>4.5</b> Git</a></li>
+<li class="chapter" data-level="4.6" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#other-programming-languages"><i class="fa fa-check"></i><b>4.6</b> Other Programming Languages</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="prep-material.html"><a href="prep-material.html"><i class="fa fa-check"></i><b>5</b> Prep Material</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="prep-material.html"><a href="prep-material.html#molecular-biology"><i class="fa fa-check"></i><b>5.1</b> Molecular Biology</a></li>
+<li class="chapter" data-level="5.2" data-path="prep-material.html"><a href="prep-material.html#quantitative-skills"><i class="fa fa-check"></i><b>5.2</b> Quantitative Skills</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="prep-material.html"><a href="prep-material.html#math"><i class="fa fa-check"></i><b>5.2.1</b> Math</a></li>
+<li class="chapter" data-level="5.2.2" data-path="prep-material.html"><a href="prep-material.html#linear-algebra"><i class="fa fa-check"></i><b>5.2.2</b> Linear Algebra</a></li>
+<li class="chapter" data-level="5.2.3" data-path="prep-material.html"><a href="prep-material.html#statistics"><i class="fa fa-check"></i><b>5.2.3</b> Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="prep-material.html"><a href="prep-material.html#programming"><i class="fa fa-check"></i><b>5.3</b> Programming</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="prep-material.html"><a href="prep-material.html#other-practice-platforms"><i class="fa fa-check"></i><b>5.3.1</b> Other Practice Platforms</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="prep-material.html"><a href="prep-material.html#fun-readings"><i class="fa fa-check"></i><b>5.4</b> Fun Readings</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="prep-material.html"><a href="prep-material.html#blogs"><i class="fa fa-check"></i><b>5.4.1</b> Blogs</a></li>
+<li class="chapter" data-level="5.4.2" data-path="prep-material.html"><a href="prep-material.html#books"><i class="fa fa-check"></i><b>5.4.2</b> Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="reading-list.html"><a href="reading-list.html"><i class="fa fa-check"></i><b>6</b> Reading List</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="reading-list.html"><a href="reading-list.html#statistics-1"><i class="fa fa-check"></i><b>6.1</b> Statistics</a></li>
+<li class="chapter" data-level="6.2" data-path="reading-list.html"><a href="reading-list.html#programming-1"><i class="fa fa-check"></i><b>6.2</b> Programming</a></li>
+<li class="chapter" data-level="6.3" data-path="reading-list.html"><a href="reading-list.html#epidemiology"><i class="fa fa-check"></i><b>6.3</b> Epidemiology</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i><b>7</b> FAQ</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="faq.html"><a href="faq.html#do-you-have-any-suggestions-for-finding-accommodation-in-london"><i class="fa fa-check"></i><b>7.1</b> 1. Do you have any suggestions for finding accommodation in London?</a></li>
+<li class="chapter" data-level="7.2" data-path="faq.html"><a href="faq.html#how-much-money-will-i-need-to-live-and-study-in-london-for-a-year"><i class="fa fa-check"></i><b>7.2</b> 2. How much money will I need to live and study in London for a year?</a></li>
+<li class="chapter" data-level="7.3" data-path="faq.html"><a href="faq.html#what-is-my-tuition-fee-status"><i class="fa fa-check"></i><b>7.3</b> 3. What is my tuition fee status?</a></li>
+<li class="chapter" data-level="7.4" data-path="faq.html"><a href="faq.html#how-and-when-should-i-send-official-documents-e.g.-degree-certificates"><i class="fa fa-check"></i><b>7.4</b> 4. How and when should I send official documents (e.g. degree certificates)?</a></li>
+<li class="chapter" data-level="7.5" data-path="faq.html"><a href="faq.html#when-does-the-course-start"><i class="fa fa-check"></i><b>7.5</b> 5. When does the course start?</a></li>
+<li class="chapter" data-level="7.6" data-path="faq.html"><a href="faq.html#im-an-international-student-what-else-should-i-consider-or-do-before-my-arrival"><i class="fa fa-check"></i><b>7.6</b> 6. I’m an international student – what else should I consider or do before my arrival?</a></li>
+<li class="chapter" data-level="7.7" data-path="faq.html"><a href="faq.html#where-does-teaching-take-place"><i class="fa fa-check"></i><b>7.7</b> 7. Where does teaching take place?</a></li>
+<li class="chapter" data-level="7.8" data-path="faq.html"><a href="faq.html#do-you-have-a-reading-list-of-books-to-prepare-for-the-course"><i class="fa fa-check"></i><b>7.8</b> 8. Do you have a reading list of books to prepare for the course?</a></li>
+<li class="chapter" data-level="7.9" data-path="faq.html"><a href="faq.html#is-there-other-preparation-that-i-should-do-before-starting-the-course"><i class="fa fa-check"></i><b>7.9</b> 9. Is there other preparation that I should do before starting the course?</a></li>
+<li class="chapter" data-level="7.10" data-path="faq.html"><a href="faq.html#will-i-need-to-buy-a-calculator"><i class="fa fa-check"></i><b>7.10</b> 10. Will I need to buy a calculator?</a></li>
+<li class="chapter" data-level="7.11" data-path="faq.html"><a href="faq.html#what-books-do-i-need-to-buy-for-the-course"><i class="fa fa-check"></i><b>7.11</b> 11. What books do I need to buy for the course?</a></li>
+<li class="chapter" data-level="7.12" data-path="faq.html"><a href="faq.html#do-i-need-to-choose-my-own-summer-project-topic"><i class="fa fa-check"></i><b>7.12</b> 12. Do I need to choose my own summer project topic?</a></li>
+<li class="chapter" data-level="7.13" data-path="faq.html"><a href="faq.html#who-should-i-contact-if-i-have-any-further-questions"><i class="fa fa-check"></i><b>7.13</b> 13. Who should I contact if I have any further questions?</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="contact-info.html"><a href="contact-info.html"><i class="fa fa-check"></i><b>8</b> Course Contact Information</a></li>
+<li class="chapter" data-level="9" data-path="mandatory-training.html"><a href="mandatory-training.html"><i class="fa fa-check"></i><b>9</b> Mandatory Training</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="mandatory-training.html"><a href="mandatory-training.html#data-protection-awareness"><i class="fa fa-check"></i><b>9.1</b> Data Protection Awareness</a></li>
+<li class="chapter" data-level="9.2" data-path="mandatory-training.html"><a href="mandatory-training.html#plagiarism-awareness"><i class="fa fa-check"></i><b>9.2</b> Plagiarism Awareness</a></li>
+<li class="chapter" data-level="9.3" data-path="mandatory-training.html"><a href="mandatory-training.html#attributes-and-aspirations-recommended"><i class="fa fa-check"></i><b>9.3</b> Attributes and Aspirations (Recommended)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html"><i class="fa fa-check"></i><b>10</b> Installing R and R Studio</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-R"><i class="fa fa-check"></i><b>10.1</b> Installing R</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#mac-users"><i class="fa fa-check"></i><b>10.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="10.1.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#windows-users"><i class="fa fa-check"></i><b>10.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-Rstudio"><i class="fa fa-check"></i><b>10.2</b> Installing RStudio</a></li>
+<li class="chapter" data-level="10.3" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-packages"><i class="fa fa-check"></i><b>10.3</b> Installing Packages</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html"><i class="fa fa-check"></i><b>11</b> Installing Python, Anaconda, and VSCode</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#installing-python"><i class="fa fa-check"></i><b>11.1</b> Python</a></li>
+<li class="chapter" data-level="11.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#installing-python-ides"><i class="fa fa-check"></i><b>11.2</b> Python IDEs</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#anaconda"><i class="fa fa-check"></i><b>11.2.1</b> Anaconda</a></li>
+<li class="chapter" data-level="11.2.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#juypter-notebook-juypter-lab-pycharm-and-spyder"><i class="fa fa-check"></i><b>11.2.2</b> Juypter Notebook, Juypter Lab, Pycharm, and Spyder</a></li>
+<li class="chapter" data-level="11.2.3" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#vs-code"><i class="fa fa-check"></i><b>11.2.3</b> VS Code</a></li>
+<li class="chapter" data-level="11.2.4" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#pycharm-vs.-vs-code"><i class="fa fa-check"></i><b>11.2.4</b> Pycharm vs. VS Code</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#package-installation"><i class="fa fa-check"></i><b>11.3</b> Package Installation</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html"><i class="fa fa-check"></i><b>12</b> Installing MySQL and DBeaver</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#installing-sql"><i class="fa fa-check"></i><b>12.1</b> MySQL Installation</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#mac-users-1"><i class="fa fa-check"></i><b>12.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="12.1.2" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#windows-users-1"><i class="fa fa-check"></i><b>12.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#installing-dbeaver"><i class="fa fa-check"></i><b>12.2</b> DBeaver Installation</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#testing-out-dbeaver"><i class="fa fa-check"></i><b>12.2.1</b> Testing out DBeaver</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html"><i class="fa fa-check"></i><b>13</b> Installing Git, Github, and Github Desktop</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#installing-git"><i class="fa fa-check"></i><b>13.1</b> Git</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#note-for-mac-users"><i class="fa fa-check"></i><b>13.1.1</b> Note for Mac Users</a></li>
+<li class="chapter" data-level="13.1.2" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#updating-git"><i class="fa fa-check"></i><b>13.1.2</b> Updating Git</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#installing-github"><i class="fa fa-check"></i><b>13.2</b> Github</a></li>
+<li class="chapter" data-level="13.3" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#github-desktop"><i class="fa fa-check"></i><b>13.3</b> Github Desktop</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="change-log.html"><a href="change-log.html"><i class="fa fa-check"></i><b>14</b> Change Log</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="change-log.html"><a href="change-log.html#v.0.0"><i class="fa fa-check"></i><b>14.1</b> v.0.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="tjw19"</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Pre Course Material</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="installing-r-and-r-studio" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Installing R and R Studio<a href="installing-r-and-r-studio.html#installing-r-and-r-studio" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You must install R before you can install R Studio. A note: R is an open-source project that can be downloaded from the CRAN Repository. R Studio is owned by Posit PBC (a public benefit corporation). It puts out a free version of R Studio and a paid enterprise version. You should not pay for R Studio. You will need to go to two different websites to download R and R Studio.</p>
+<div id="installing-R" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Installing R<a href="installing-r-and-r-studio.html#installing-R" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Please download and install R (version 4.5.1) from the CRAN following the relevant instructions below.</p>
+<div id="mac-users" class="section level3 hasAnchor" number="10.1.1">
+<h3><span class="header-section-number">10.1.1</span> Mac users<a href="installing-r-and-r-studio.html#mac-users" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>R for Mac OS X can be downloaded from the following link: <a href="https://cran.r-project.org/bin/macosx/" class="uri">https://cran.r-project.org/bin/macosx/</a></p>
+<p>The link will take you to the download page on the CRAN (Figure 1). Please select the latest version by clicking on R-4.5.1.pkg (circled in red) if this version can be supported on your machine. Otherwise, choose the latest supported version. If you have a laptop with the Apple chip, you can select the version circled in green, which has been specifically designed for that chip.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="FIG_software_installation/R_download_mac.png" alt="Downloading R from the CRAN" width="100%" />
+<p class="caption">
+Figure 3.1: Downloading R from the CRAN
+</p>
+</div>
+<p>Once the download has finished, you can follow the recommended steps for installation (Figure 2).</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="FIG_software_installation/R_install.png" alt="R installation" width="100%" />
+<p class="caption">
+Figure 3.2: R installation
+</p>
+</div>
+<p>As indicated on the download page, you will also need to install XQuartz to be able to use some more advanced R functionalities. This can be done from this link: <a href="https://www.xquartz.org" class="uri">https://www.xquartz.org</a></p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="FIG_software_installation/XQuartz_download_mac.png" alt="Downloading XQuartz" width="100%" />
+<p class="caption">
+Figure 3.3: Downloading XQuartz
+</p>
+</div>
+</div>
+<div id="windows-users" class="section level3 hasAnchor" number="10.1.2">
+<h3><span class="header-section-number">10.1.2</span> Windows users<a href="installing-r-and-r-studio.html#windows-users" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>R for Windows can be downloaded from the following link: <a href="https://cran.r-project.org/bin/windows/base/" class="uri">https://cran.r-project.org/bin/windows/base/</a></p>
+<p>The link will take you to the download page on the CRAN (Figure 4). Please select the latest version by clicking on “Download R 4.5.1 for Windows”.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="FIG_software_installation/R_download_windows.png" alt="Downloading R from the CRAN" width="100%" />
+<p class="caption">
+Figure 3.4: Downloading R from the CRAN
+</p>
+</div>
+</div>
+</div>
+<div id="installing-Rstudio" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Installing RStudio<a href="installing-r-and-r-studio.html#installing-Rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R Studio is both a GUI and an integrated development environment for R. You can download the Open Source R Studio Desktop from this link: <a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a></p>
+<p>This link will take you to this webpage:</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="FIG_software_installation/Rstudio_download1.png" alt="Downloading R Studio (step 1)" width="100%" />
+<p class="caption">
+Figure 3.5: Downloading R Studio (step 1)
+</p>
+</div>
+<p>Click on “Download” and select the installation file corresponding to your system. Once the file is downloaded, please follow the instructions for installation.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="FIG_software_installation/Rstudio_download2.png" alt="Downloading R Studio (step 2)" width="100%" />
+<p class="caption">
+Figure 4.1: Downloading R Studio (step 2)
+</p>
+</div>
+</div>
+<div id="installing-packages" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Installing Packages<a href="installing-r-and-r-studio.html#installing-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Packages are a collection functions, compiled code, and sample data. At their core, they are just useful extensions to programming languages that you can download from the internet. Browser plug-ins/extensions for a web-browser such as Google chrome are essentially “packages” that allow you to add a useful function that Chrome doesn’t current have.</p>
+<p>Open-Source software, such as R, is software for which the original source code is made freely available and may be redistributed and modified. Users are able to write code to perform common tasks and share it freely by putting their work on a repository. A software repository, or repo, is a centralized storage location for software packages, code, and related files. Think of it as a digital library where developers can store, access, and manage different versions of their work.</p>
+<p>There are two main repositories of R packages (sets of built-in R functions): the CRAN (Comprehensive R Archive Network) and Bioconductor. R checks only CRAN by default, by you can tell it to look elsewhere (such as Bioconductor). The code below will install most of the R packages that you need in the course. You don’t need to understand all of the code, but can you spot where it is telling R to check Bioconductor instead of CRAN?</p>
+<p>Once both R and R Studio are installed, you can open RStudio and install the required packages by running the following code (you can copy it by clicking the pages icon in the top right of the code block below). We recommend opening R Studio, going to File -&gt; New File -&gt; R Script, copying the code below, pasting it into the R Script you created, and running the entire script at once.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="installing-r-and-r-studio.html#cb1-1" tabindex="-1"></a><span class="do">### First we create a function that checks if you have the package installed </span></span>
+<span id="cb1-2"><a href="installing-r-and-r-studio.html#cb1-2" tabindex="-1"></a>    <span class="do">### and, if you don&#39;t have it, installs the package</span></span>
+<span id="cb1-3"><a href="installing-r-and-r-studio.html#cb1-3" tabindex="-1"></a>    checkInstallPackage <span class="ot">&lt;-</span> <span class="cf">function</span>(package.list){</span>
+<span id="cb1-4"><a href="installing-r-and-r-studio.html#cb1-4" tabindex="-1"></a>      new.packages <span class="ot">&lt;-</span> package.list[<span class="sc">!</span>(package.list <span class="sc">%in%</span> <span class="fu">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])]</span>
+<span id="cb1-5"><a href="installing-r-and-r-studio.html#cb1-5" tabindex="-1"></a>      <span class="fu">print</span>(<span class="fu">paste</span>(<span class="fu">length</span>(new.packages), <span class="st">&quot;packages require installation. Installing now&quot;</span>))</span>
+<span id="cb1-6"><a href="installing-r-and-r-studio.html#cb1-6" tabindex="-1"></a>      <span class="cf">if</span>(<span class="fu">length</span>(new.packages)) <span class="fu">install.packages</span>(new.packages)</span>
+<span id="cb1-7"><a href="installing-r-and-r-studio.html#cb1-7" tabindex="-1"></a>    }</span>
+<span id="cb1-8"><a href="installing-r-and-r-studio.html#cb1-8" tabindex="-1"></a>    <span class="do">### Now we have a function, we can pass a list of the packages we will be </span></span>
+<span id="cb1-9"><a href="installing-r-and-r-studio.html#cb1-9" tabindex="-1"></a>    <span class="do">### using on the course into the function, and install them all in one go</span></span>
+<span id="cb1-10"><a href="installing-r-and-r-studio.html#cb1-10" tabindex="-1"></a>    <span class="co"># first we create the list of packages</span></span>
+<span id="cb1-11"><a href="installing-r-and-r-studio.html#cb1-11" tabindex="-1"></a>    package.list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;e1071&quot;</span>, <span class="st">&quot;optparse&quot;</span>, <span class="st">&quot;tidyverse&quot;</span>, <span class="st">&quot;mvoutlier&quot;</span>, <span class="st">&quot;pcaMethods&quot;</span>,</span>
+<span id="cb1-12"><a href="installing-r-and-r-studio.html#cb1-12" tabindex="-1"></a>                <span class="st">&quot;imputeLCMD&quot;</span>, <span class="st">&quot;lme4&quot;</span>, <span class="st">&quot;RColorBrewer&quot;</span>, <span class="st">&quot;VennDiagram&quot;</span>, <span class="st">&quot;glmnet&quot;</span>, <span class="st">&quot;omics&quot;</span>,<span class="st">&quot;stringr&quot;</span>,</span>
+<span id="cb1-13"><a href="installing-r-and-r-studio.html#cb1-13" tabindex="-1"></a>                <span class="st">&quot;utils&quot;</span>,<span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;ROCR&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;ggfortify&quot;</span>, <span class="st">&quot;survival&quot;</span>, <span class="st">&quot;igraph&quot;</span>, <span class="st">&quot;corpcor&quot;</span>,</span>
+<span id="cb1-14"><a href="installing-r-and-r-studio.html#cb1-14" tabindex="-1"></a>                <span class="st">&quot;ppcor&quot;</span>, <span class="st">&quot;abind&quot;</span>, <span class="st">&quot;parallel&quot;</span>)</span>
+<span id="cb1-15"><a href="installing-r-and-r-studio.html#cb1-15" tabindex="-1"></a>    <span class="co"># now we run the function</span></span>
+<span id="cb1-16"><a href="installing-r-and-r-studio.html#cb1-16" tabindex="-1"></a>    <span class="fu">checkInstallPackage</span>(package.list)</span>
+<span id="cb1-17"><a href="installing-r-and-r-studio.html#cb1-17" tabindex="-1"></a>    <span class="co"># this may take some time to run #</span></span>
+<span id="cb1-18"><a href="installing-r-and-r-studio.html#cb1-18" tabindex="-1"></a>    <span class="do">### Installing some packages from Bioconductor </span><span class="al">###</span></span>
+<span id="cb1-19"><a href="installing-r-and-r-studio.html#cb1-19" tabindex="-1"></a>    <span class="co"># some of the packages we use are only available on bioconductor and these need </span></span>
+<span id="cb1-20"><a href="installing-r-and-r-studio.html#cb1-20" tabindex="-1"></a>    <span class="co"># to be installed separately. Run this code to install these packages.</span></span>
+<span id="cb1-21"><a href="installing-r-and-r-studio.html#cb1-21" tabindex="-1"></a>    <span class="co"># You may receive a prompt &quot;Update all/some/none? [a/s/n]:&quot; – </span></span>
+<span id="cb1-22"><a href="installing-r-and-r-studio.html#cb1-22" tabindex="-1"></a>    <span class="co"># if you see this, type &quot;a&quot; and press enter</span></span>
+<span id="cb1-23"><a href="installing-r-and-r-studio.html#cb1-23" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="st">&quot;pcaMethods&quot;</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>())) {</span>
+<span id="cb1-24"><a href="installing-r-and-r-studio.html#cb1-24" tabindex="-1"></a>      <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>,</span>
+<span id="cb1-25"><a href="installing-r-and-r-studio.html#cb1-25" tabindex="-1"></a>                            <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-26"><a href="installing-r-and-r-studio.html#cb1-26" tabindex="-1"></a>        <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb1-27"><a href="installing-r-and-r-studio.html#cb1-27" tabindex="-1"></a>      BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;pcaMethods&quot;</span>)</span>
+<span id="cb1-28"><a href="installing-r-and-r-studio.html#cb1-28" tabindex="-1"></a>    }</span>
+<span id="cb1-29"><a href="installing-r-and-r-studio.html#cb1-29" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="st">&quot;impute&quot;</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>())) {</span>
+<span id="cb1-30"><a href="installing-r-and-r-studio.html#cb1-30" tabindex="-1"></a>      <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>,</span>
+<span id="cb1-31"><a href="installing-r-and-r-studio.html#cb1-31" tabindex="-1"></a>                            <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-32"><a href="installing-r-and-r-studio.html#cb1-32" tabindex="-1"></a>        <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb1-33"><a href="installing-r-and-r-studio.html#cb1-33" tabindex="-1"></a>      BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;impute&quot;</span>)</span>
+<span id="cb1-34"><a href="installing-r-and-r-studio.html#cb1-34" tabindex="-1"></a>    }</span></code></pre></div>
+<p>Once you have run all these lines of code, please make sure that all the packages have been properly installed. They should all be listed in the “Packages” tab (bottom right hand quadrant of R Studio):</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="imgs/R_Packages.png" alt="Checking Package Download" width="100%" />
+<p class="caption">
+Figure 10.1: Checking Package Download
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mandatory-training.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="installing-python-anaconda-and-vscode.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

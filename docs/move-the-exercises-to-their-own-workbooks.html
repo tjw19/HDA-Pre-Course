@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Move the Exercises to their own workbooks | Pre Course Material</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Move the Exercises to their own workbooks | Pre Course Material" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Move the Exercises to their own workbooks | Pre Course Material" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Health Data Analytics and Machine Learning" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="setting-up-your-computer.html"/>
+<link rel="next" href="prep-material.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#what-makes-hda-unique"><i class="fa fa-check"></i><b>1.1</b> What Makes HDA Unique</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#program-overview"><i class="fa fa-check"></i><b>1.2</b> Program Overview</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#getting-ready-for-the-program"><i class="fa fa-check"></i><b>1.3</b> Getting Ready For the Program</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html"><i class="fa fa-check"></i><b>2</b> Term Dates and Time Requirements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html#imperial-college-term-dates"><i class="fa fa-check"></i><b>2.1</b> Imperial College Term Dates</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="general-advice.html"><a href="general-advice.html"><i class="fa fa-check"></i><b>3</b> General Advice</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="general-advice.html"><a href="general-advice.html#advice-from-the-teaching-team"><i class="fa fa-check"></i><b>3.1</b> Advice from the Teaching Team</a></li>
+<li class="chapter" data-level="3.2" data-path="general-advice.html"><a href="general-advice.html#advice-from-previous-hda-students"><i class="fa fa-check"></i><b>3.2</b> Advice from previous HDA students</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="general-advice.html"><a href="general-advice.html#before-starting-the-course"><i class="fa fa-check"></i><b>3.2.1</b> Before starting the course</a></li>
+<li class="chapter" data-level="3.2.2" data-path="general-advice.html"><a href="general-advice.html#throughout-the-course"><i class="fa fa-check"></i><b>3.2.2</b> Throughout the course</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html"><i class="fa fa-check"></i><b>4</b> Setting Up Your Computer</a></li>
+<li class="chapter" data-level="5" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html"><i class="fa fa-check"></i><b>5</b> Move the Exercises to their own workbooks</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#getting-to-know-your-computer"><i class="fa fa-check"></i><b>5.1</b> Getting to Know Your Computer</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#mac-computer-specifications"><i class="fa fa-check"></i><b>5.1.1</b> Mac Computer Specifications</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#bash"><i class="fa fa-check"></i><b>5.2</b> Bash</a></li>
+<li class="chapter" data-level="5.3" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#r"><i class="fa fa-check"></i><b>5.3</b> R</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#installing-packages"><i class="fa fa-check"></i><b>5.3.1</b> Installing Packages</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#python"><i class="fa fa-check"></i><b>5.4</b> Python</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#python-guis"><i class="fa fa-check"></i><b>5.4.1</b> Python GUIs</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#sql"><i class="fa fa-check"></i><b>5.5</b> SQL</a></li>
+<li class="chapter" data-level="5.6" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#git"><i class="fa fa-check"></i><b>5.6</b> Git</a></li>
+<li class="chapter" data-level="5.7" data-path="move-the-exercises-to-their-own-workbooks.html"><a href="move-the-exercises-to-their-own-workbooks.html#other-programming-languages"><i class="fa fa-check"></i><b>5.7</b> Other Programming Languages</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="prep-material.html"><a href="prep-material.html"><i class="fa fa-check"></i><b>6</b> Prep Material</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="prep-material.html"><a href="prep-material.html#biology-for-omics-cheat-sheet"><i class="fa fa-check"></i><b>6.1</b> Biology for OMICs cheat sheet</a></li>
+<li class="chapter" data-level="6.2" data-path="prep-material.html"><a href="prep-material.html#math"><i class="fa fa-check"></i><b>6.2</b> Math</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="prep-material.html"><a href="prep-material.html#functions"><i class="fa fa-check"></i><b>6.2.1</b> Functions</a></li>
+<li class="chapter" data-level="6.2.2" data-path="prep-material.html"><a href="prep-material.html#optimization"><i class="fa fa-check"></i><b>6.2.2</b> Optimization</a></li>
+<li class="chapter" data-level="6.2.3" data-path="prep-material.html"><a href="prep-material.html#linear-algebra"><i class="fa fa-check"></i><b>6.2.3</b> Linear Algebra</a></li>
+<li class="chapter" data-level="6.2.4" data-path="prep-material.html"><a href="prep-material.html#statistics"><i class="fa fa-check"></i><b>6.2.4</b> Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="prep-material.html"><a href="prep-material.html#programming"><i class="fa fa-check"></i><b>6.3</b> Programming</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="prep-material.html"><a href="prep-material.html#exercises-within-this-book"><i class="fa fa-check"></i><b>6.3.1</b> Exercises within this book</a></li>
+<li class="chapter" data-level="6.3.2" data-path="prep-material.html"><a href="prep-material.html#datacamp"><i class="fa fa-check"></i><b>6.3.2</b> Datacamp</a></li>
+<li class="chapter" data-level="6.3.3" data-path="prep-material.html"><a href="prep-material.html#videos"><i class="fa fa-check"></i><b>6.3.3</b> Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="prep-material.html"><a href="prep-material.html#organization"><i class="fa fa-check"></i><b>6.4</b> Organization</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="prep-material.html"><a href="prep-material.html#iterative-project-management"><i class="fa fa-check"></i><b>6.4.1</b> Iterative Project Management</a></li>
+<li class="chapter" data-level="6.4.2" data-path="prep-material.html"><a href="prep-material.html#note-organization-strategies"><i class="fa fa-check"></i><b>6.4.2</b> Note Organization Strategies</a></li>
+<li class="chapter" data-level="6.4.3" data-path="prep-material.html"><a href="prep-material.html#goal-setting"><i class="fa fa-check"></i><b>6.4.3</b> Goal Setting</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="prep-material.html"><a href="prep-material.html#fun-readings"><i class="fa fa-check"></i><b>6.5</b> Fun Readings</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="prep-material.html"><a href="prep-material.html#blogs"><i class="fa fa-check"></i><b>6.5.1</b> Blogs</a></li>
+<li class="chapter" data-level="6.5.2" data-path="prep-material.html"><a href="prep-material.html#books"><i class="fa fa-check"></i><b>6.5.2</b> Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="course-previews.html"><a href="course-previews.html"><i class="fa fa-check"></i><b>7</b> Course Previews</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="course-previews.html"><a href="course-previews.html#statistics-1"><i class="fa fa-check"></i><b>7.1</b> Statistics</a></li>
+<li class="chapter" data-level="7.2" data-path="course-previews.html"><a href="course-previews.html#epidemiology"><i class="fa fa-check"></i><b>7.2</b> Epidemiology</a></li>
+<li class="chapter" data-level="7.3" data-path="course-previews.html"><a href="course-previews.html#molecular-epidemiology"><i class="fa fa-check"></i><b>7.3</b> Molecular Epidemiology</a></li>
+<li class="chapter" data-level="7.4" data-path="course-previews.html"><a href="course-previews.html#clinical-data-management"><i class="fa fa-check"></i><b>7.4</b> Clinical Data Management</a></li>
+<li class="chapter" data-level="7.5" data-path="course-previews.html"><a href="course-previews.html#translational-data-science"><i class="fa fa-check"></i><b>7.5</b> Translational Data Science</a></li>
+<li class="chapter" data-level="7.6" data-path="course-previews.html"><a href="course-previews.html#machine-learning"><i class="fa fa-check"></i><b>7.6</b> Machine Learning</a></li>
+<li class="chapter" data-level="7.7" data-path="course-previews.html"><a href="course-previews.html#ai-for-healthcare"><i class="fa fa-check"></i><b>7.7</b> AI for Healthcare</a></li>
+<li class="chapter" data-level="7.8" data-path="course-previews.html"><a href="course-previews.html#computational-epidemiology"><i class="fa fa-check"></i><b>7.8</b> Computational Epidemiology</a></li>
+<li class="chapter" data-level="7.9" data-path="course-previews.html"><a href="course-previews.html#research-skills"><i class="fa fa-check"></i><b>7.9</b> Research Skills</a></li>
+<li class="chapter" data-level="7.10" data-path="course-previews.html"><a href="course-previews.html#exposomic-science"><i class="fa fa-check"></i><b>7.10</b> Exposomic Science</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="reading-list.html"><a href="reading-list.html"><i class="fa fa-check"></i><b>8</b> Reading List</a>
+<ul>
+<li class="chapter" data-level="8.0.1" data-path="reading-list.html"><a href="reading-list.html#statistics-2"><i class="fa fa-check"></i><b>8.0.1</b> Statistics</a></li>
+<li class="chapter" data-level="8.0.2" data-path="reading-list.html"><a href="reading-list.html#programming-1"><i class="fa fa-check"></i><b>8.0.2</b> Programming</a></li>
+<li class="chapter" data-level="8.0.3" data-path="reading-list.html"><a href="reading-list.html#epidemiology-1"><i class="fa fa-check"></i><b>8.0.3</b> Epidemiology</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="deep-dive.html"><a href="deep-dive.html"><i class="fa fa-check"></i><b>9</b> Deep Dive</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="deep-dive.html"><a href="deep-dive.html#statistics-and-math"><i class="fa fa-check"></i><b>9.1</b> Statistics and Math</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="deep-dive.html"><a href="deep-dive.html#epidemiology-2"><i class="fa fa-check"></i><b>9.1.1</b> Epidemiology</a></li>
+<li class="chapter" data-level="9.1.2" data-path="deep-dive.html"><a href="deep-dive.html#programming-2"><i class="fa fa-check"></i><b>9.1.2</b> Programming</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i><b>10</b> FAQ</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="faq.html"><a href="faq.html#frequently-asked-questions"><i class="fa fa-check"></i><b>10.1</b> Frequently Asked Questions <a name="FAQ"></a></a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="course-contact-information.html"><a href="course-contact-information.html"><i class="fa fa-check"></i><b>11</b> Course Contact Information</a></li>
+<li class="chapter" data-level="12" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html"><i class="fa fa-check"></i><b>12</b> Course Contact Information</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html#mandatory-training"><i class="fa fa-check"></i><b>12.1</b> Mandatory Training <a name="mandatory_training"></a></a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html#data-protection-awareness"><i class="fa fa-check"></i><b>12.1.1</b> Data Protection Awareness</a></li>
+<li class="chapter" data-level="12.1.2" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html#plagiarism-awareness"><i class="fa fa-check"></i><b>12.1.2</b> Plagiarism Awareness</a></li>
+<li class="chapter" data-level="12.1.3" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html#ukb"><i class="fa fa-check"></i><b>12.1.3</b> UKB</a></li>
+<li class="chapter" data-level="12.1.4" data-path="course-contact-information-1.html"><a href="course-contact-information-1.html#attributes-and-aspirations-recommended"><i class="fa fa-check"></i><b>12.1.4</b> Attributes and Aspirations (Recommended)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html"><i class="fa fa-check"></i><b>13</b> Installing R and R Studio</a>
+<ul>
+<li class="chapter" data-level="13.0.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-r---sabrina"><i class="fa fa-check"></i><b>13.0.1</b> Installing R - Sabrina</a></li>
+<li class="chapter" data-level="13.0.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-rstudio---sabrina"><i class="fa fa-check"></i><b>13.0.2</b> Installing RStudio - Sabrina</a></li>
+<li class="chapter" data-level="13.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#r-installation"><i class="fa fa-check"></i><b>13.1</b> R installation</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#mac-users"><i class="fa fa-check"></i><b>13.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="13.1.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#windows-users"><i class="fa fa-check"></i><b>13.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#r-studio-installation"><i class="fa fa-check"></i><b>13.2</b> R Studio installation</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html"><i class="fa fa-check"></i><b>14</b> Installing Python, Anaconda, and VSCode</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#python-1"><i class="fa fa-check"></i><b>14.1</b> Python</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#mac-users-1"><i class="fa fa-check"></i><b>14.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="14.1.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#windows-users-1"><i class="fa fa-check"></i><b>14.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#python-guis-1"><i class="fa fa-check"></i><b>14.2</b> Python GUIs</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#anaconda"><i class="fa fa-check"></i><b>14.2.1</b> Anaconda</a></li>
+<li class="chapter" data-level="14.2.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#juypter-notebook-and-juypter-lab"><i class="fa fa-check"></i><b>14.2.2</b> Juypter Notebook and Juypter Lab</a></li>
+<li class="chapter" data-level="14.2.3" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#pycharm"><i class="fa fa-check"></i><b>14.2.3</b> Pycharm</a></li>
+<li class="chapter" data-level="14.2.4" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#vs-code"><i class="fa fa-check"></i><b>14.2.4</b> VS Code</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html"><i class="fa fa-check"></i><b>15</b> MySQL and DBeaver</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#mysql-installation"><i class="fa fa-check"></i><b>15.1</b> MySQL Installation</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#mac-users-2"><i class="fa fa-check"></i><b>15.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="15.1.2" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#windows-users-2"><i class="fa fa-check"></i><b>15.1.2</b> Windows users</a></li>
+<li class="chapter" data-level="15.1.3" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#linux-users"><i class="fa fa-check"></i><b>15.1.3</b> Linux Users</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#dbeaver-installation"><i class="fa fa-check"></i><b>15.2</b> DBeaver Installation</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="mysql-and-dbeaver.html"><a href="mysql-and-dbeaver.html#testing-out-dbeaver"><i class="fa fa-check"></i><b>15.2.1</b> Testing out DBeaver</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html"><i class="fa fa-check"></i><b>16</b> Installing Git, Github, and Github Desktop</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#github"><i class="fa fa-check"></i><b>16.1</b> Github</a></li>
+<li class="chapter" data-level="16.2" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#git-1"><i class="fa fa-check"></i><b>16.2</b> Git</a></li>
+<li class="chapter" data-level="16.3" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#github-desktop"><i class="fa fa-check"></i><b>16.3</b> Github Desktop</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="bash-exercise.html"><a href="bash-exercise.html"><i class="fa fa-check"></i><b>17</b> Bash Exercise</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="bash-exercise.html"><a href="bash-exercise.html#getting-comfortable-with-the-basic-commands"><i class="fa fa-check"></i><b>17.1</b> Getting comfortable with the basic commands</a></li>
+<li class="chapter" data-level="17.2" data-path="bash-exercise.html"><a href="bash-exercise.html#download-sublime-text"><i class="fa fa-check"></i><b>17.2</b> Download Sublime Text</a></li>
+<li class="chapter" data-level="17.3" data-path="bash-exercise.html"><a href="bash-exercise.html#run-the-r-file-from-the-terminal"><i class="fa fa-check"></i><b>17.3</b> Run the R file from the terminal</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="r-studio-exercise.html"><a href="r-studio-exercise.html"><i class="fa fa-check"></i><b>18</b> R Studio Exercise</a></li>
+<li class="chapter" data-level="19" data-path="python-gui-exercises.html"><a href="python-gui-exercises.html"><i class="fa fa-check"></i><b>19</b> Python GUI Exercises</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="python-gui-exercises.html"><a href="python-gui-exercises.html#juypter-notebook"><i class="fa fa-check"></i><b>19.1</b> Juypter Notebook</a></li>
+<li class="chapter" data-level="19.2" data-path="python-gui-exercises.html"><a href="python-gui-exercises.html#pycharm-1"><i class="fa fa-check"></i><b>19.2</b> Pycharm</a></li>
+<li class="chapter" data-level="19.3" data-path="python-gui-exercises.html"><a href="python-gui-exercises.html#vs-code-1"><i class="fa fa-check"></i><b>19.3</b> VS Code</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="dbeaver-exercise.html"><a href="dbeaver-exercise.html"><i class="fa fa-check"></i><b>20</b> DBeaver Exercise</a>
+<ul>
+<li class="chapter" data-level="20.0.1" data-path="dbeaver-exercise.html"><a href="dbeaver-exercise.html#troubleshooting-common-errors"><i class="fa fa-check"></i><b>20.0.1</b> Troubleshooting Common Errors</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Pre Course Material</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="move-the-exercises-to-their-own-workbooks" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Move the Exercises to their own workbooks<a href="move-the-exercises-to-their-own-workbooks.html#move-the-exercises-to-their-own-workbooks" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>HDA uses the following programming languages: Bash, R, Python, SQL, Git, and Latex/Markdown. It can be overwhelming to learn so many new things in such a short time. We will use the set up of your computer to introduce the languages, tools we use to interact with them, and some key computing concepts. Don’t feel that you need to complete the entire set up in one session.</p>
+<p>It is important to note the distinction between HDA using the languages and HDA teaching the languages. The fundamentals of each language will be introduced, but the focus will be on the application and utility of the languages rather than improving programming skills. Students are provided a free subscription to Datacamp which they are expected to use to hone their programming skills.</p>
+<p>If you have trouble installing any of these programs please fill out this help form: <a href="https://forms.office.com/e/QnCqDH5kJ1" class="uri">https://forms.office.com/e/QnCqDH5kJ1</a></p>
+<div id="getting-to-know-your-computer" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Getting to Know Your Computer<a href="move-the-exercises-to-their-own-workbooks.html#getting-to-know-your-computer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When installing a program on your computer, you are often presented with several versions of the software depending on your computer specifications.</p>
+<div id="mac-computer-specifications" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Mac Computer Specifications<a href="move-the-exercises-to-their-own-workbooks.html#mac-computer-specifications" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="imgs/Mac_install_info.png" alt="Downloading R from the CRAN" width="100%" />
+<p class="caption">
+Figure 5.1: Downloading R from the CRAN
+</p>
+</div>
+<p>Include Mac and Windows install info here (what version their computer and operating system is and what versions they should install).</p>
+</div>
+</div>
+<div id="bash" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Bash<a href="move-the-exercises-to-their-own-workbooks.html#bash" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Unix is a foundational operating system that provides the basic structure for running computer programs and managing hardware resources. You can access it with a command line interface. This called “Terminal” on Mac and Windows. When you open up Terminal, you are able to type in text. The language you type in is called “Bash”. Certain keywords will perform tasks on your computer.</p>
+<p>Open the Terminal on your computer and type “pwd” and press enter. Then type “ls” and press enter.</p>
+<p><img src="imgs/Basic_Terminal.png" alt="Basic Bash Commands" />
+You have just told your computer to <strong>p</strong>rint the <strong>w</strong>orking <strong>d</strong>irectory (pwd) or tell you what folder you are currently in on your computer. We then told the computer to <strong>l</strong>i<strong>s</strong>t (ls) the contents of that folder. Interacting directly with the operating system can be difficult, clunky, and intimidating for beginners. To overcome this issue, companies like Microsoft developed <strong>G</strong>rapical <strong>U</strong>ser <strong>I</strong>nterfaces (GUI) to make interacting with the computer easier and more user friendly. Now you are able to double click icons on your desktop instead of needing to type into the terminal – vastly expanding the number of people who can use computers.</p>
+<p>That is all you need to know about Bash for now as it will be covered in more detail in the course. The key takeaway is that a programming language allows you to interact with a program – here your operating system. There are different programming languages for different programs. GUIs make it easier and more user friendly to interact with key programs.</p>
+</div>
+<div id="r" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> R<a href="move-the-exercises-to-their-own-workbooks.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R is a domain-specific, statistical programming language. This means that it has been designed to allows users to perform mathematical and statistical analysis without needing advanced programming knowledge.</p>
+<p>Install R</p>
+<p>Open Terminal. Type “R” and press enter. Your terminal should now be displaying R. Now type in “2+2” and press enter. You should get the answer of “4”. Type “print(‘Hello World’)” and press enter. Now type “pwd” and press enter. You get an “Error: object”pwd” not found”. Type in “quit()” and press enter then “n” and enter when prompted.</p>
+<div class="float">
+<img src="imgs/R_Hello.png" alt="Hello World in R" />
+<div class="figcaption">Hello World in R</div>
+</div>
+<p>You are now back in the Terminal. Type “2+2” and press enter. You get an error that the “command is not found”. Now type “print(‘Hello World’)”. You can an error that there is “unknown file attribute: H”. Now type “pwd” and press enter.</p>
+<div class="float">
+<img src="imgs/Bash_Hello.png" alt="Hello World in Bash" />
+<div class="figcaption">Hello World in Bash</div>
+</div>
+<p>What has just happened? You have just written in two separate programming languages. Key commands in one languages are not recognized in another language. Bash is for interacting with operating systems so will have a lot of inbuilt commands to do so (like printing the user location). R is for statistical analysis so can handle numeric values and has inbuilt programming functions to make use easier (like print).</p>
+<p>Like using Bash, this can be a bit clunky, difficult, and intimidating. All popular programming languages have at least one GUI to solve this issue. The most popular GUI for R is called R Studio.</p>
+<p>Install R Studio</p>
+<p>Open R Studio. Type in “2+2” and press enter, then “print(‘Hello World’)” and press enter. You are typing in the console, which was the exact same thing that you accessed from the Terminal by typing in “R”.</p>
+<div class="float">
+<img src="imgs/R_Console.png" alt="Hello World in Bash" />
+<div class="figcaption">Hello World in Bash</div>
+</div>
+<p>Let’s see how this can be helpful. Create a new R Script by click on the option in the upper left of the program.</p>
+<div class="float">
+<img src="imgs/R_New.png" alt="Hello World in Bash" />
+<div class="figcaption">Hello World in Bash</div>
+</div>
+<p>In the new script, type in “2+2” press enter then type “print(‘Hello World’)” and press enter. What has happened? Nothing since the script acts like a text document. Highlight both lines of code and then click “Run” in the upper right of the script window. Now you will get the output you expected.</p>
+<div class="float">
+<img src="imgs/R_Script.png" alt="Hello World in Bash" />
+<div class="figcaption">Hello World in Bash</div>
+</div>
+<p>If you wanted you could change part of the script easily and run it again. Or save it and send it to a friend. This is all that you need to know about the functionality of R Studio for now but it has many powerful features. For example: This book was written in R Studio (you can see the files open in the script pane in the picture above).</p>
+<div id="installing-packages" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Installing Packages<a href="move-the-exercises-to-their-own-workbooks.html#installing-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>What are packages.</p>
+<p>There are two main repositories of R packages (sets of built-in R functions): the CRAN (Comprehensive R Archive Network) and Bioconductor. R checks only CRAN by default, by you can tell it to look elsewhere (such as Bioconductor). The code below will install most of the R packages that you neeed in the course. You don’t need to understand all of the code, but can you spot where it is telling R to check Bioconductor instead of CRAN?</p>
+<p>Once both R and R Studio are installed, you can open RStudio and install the required packages by running the following code (you can copy it by clicking the pages icon in the top right of the code block below):</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-1" tabindex="-1"></a><span class="do">### First we create a function that checks if you have the package installed </span></span>
+<span id="cb1-2"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-2" tabindex="-1"></a>    <span class="do">### and, if you don&#39;t have it, installs the package</span></span>
+<span id="cb1-3"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-3" tabindex="-1"></a>    checkInstallPackage <span class="ot">&lt;-</span> <span class="cf">function</span>(package.list){</span>
+<span id="cb1-4"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-4" tabindex="-1"></a>      new.packages <span class="ot">&lt;-</span> package.list[<span class="sc">!</span>(package.list <span class="sc">%in%</span> <span class="fu">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])]</span>
+<span id="cb1-5"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-5" tabindex="-1"></a>      <span class="fu">print</span>(<span class="fu">paste</span>(<span class="fu">length</span>(new.packages), <span class="st">&quot;packages require installation. Installing now&quot;</span>))</span>
+<span id="cb1-6"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-6" tabindex="-1"></a>      <span class="cf">if</span>(<span class="fu">length</span>(new.packages)) <span class="fu">install.packages</span>(new.packages)</span>
+<span id="cb1-7"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-7" tabindex="-1"></a>    }</span>
+<span id="cb1-8"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-8" tabindex="-1"></a>    <span class="do">### Now we have a function, we can pass a list of the packages we will be </span></span>
+<span id="cb1-9"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-9" tabindex="-1"></a>    <span class="do">### using on the course into the function, and install them all in one go</span></span>
+<span id="cb1-10"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-10" tabindex="-1"></a>    <span class="co"># first we create the list of packages</span></span>
+<span id="cb1-11"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-11" tabindex="-1"></a>    package.list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;e1071&quot;</span>, <span class="st">&quot;optparse&quot;</span>, <span class="st">&quot;tidyverse&quot;</span>, <span class="st">&quot;mvoutlier&quot;</span>, <span class="st">&quot;pcaMethods&quot;</span>,</span>
+<span id="cb1-12"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-12" tabindex="-1"></a>                <span class="st">&quot;imputeLCMD&quot;</span>, <span class="st">&quot;lme4&quot;</span>, <span class="st">&quot;RColorBrewer&quot;</span>, <span class="st">&quot;VennDiagram&quot;</span>, <span class="st">&quot;glmnet&quot;</span>, <span class="st">&quot;omics&quot;</span>,<span class="st">&quot;stringr&quot;</span>,</span>
+<span id="cb1-13"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-13" tabindex="-1"></a>                <span class="st">&quot;utils&quot;</span>,<span class="st">&quot;dplyr&quot;</span>, <span class="st">&quot;ROCR&quot;</span>, <span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;ggfortify&quot;</span>, <span class="st">&quot;survival&quot;</span>, <span class="st">&quot;igraph&quot;</span>, <span class="st">&quot;corpcor&quot;</span>,</span>
+<span id="cb1-14"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-14" tabindex="-1"></a>                <span class="st">&quot;ppcor&quot;</span>, <span class="st">&quot;abind&quot;</span>, <span class="st">&quot;parallel&quot;</span>)</span>
+<span id="cb1-15"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-15" tabindex="-1"></a>    <span class="co"># now we run the function</span></span>
+<span id="cb1-16"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-16" tabindex="-1"></a>    <span class="fu">checkInstallPackage</span>(package.list)</span>
+<span id="cb1-17"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-17" tabindex="-1"></a>    <span class="co"># this may take some time to run #</span></span>
+<span id="cb1-18"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-18" tabindex="-1"></a>    <span class="do">### Installing some packages from Bioconductor </span><span class="al">###</span></span>
+<span id="cb1-19"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-19" tabindex="-1"></a>    <span class="co"># some of the packages we use are only available on bioconductor and these need </span></span>
+<span id="cb1-20"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-20" tabindex="-1"></a>    <span class="co"># to be installed separately. Run this code to install these packages.</span></span>
+<span id="cb1-21"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-21" tabindex="-1"></a>    <span class="co"># You may receive a prompt &quot;Update all/some/none? [a/s/n]:&quot; – </span></span>
+<span id="cb1-22"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-22" tabindex="-1"></a>    <span class="co"># if you see this, type &quot;a&quot; and press enter</span></span>
+<span id="cb1-23"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-23" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="st">&quot;pcaMethods&quot;</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>())) {</span>
+<span id="cb1-24"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-24" tabindex="-1"></a>      <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>,</span>
+<span id="cb1-25"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-25" tabindex="-1"></a>                            <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-26"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-26" tabindex="-1"></a>        <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb1-27"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-27" tabindex="-1"></a>      BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;pcaMethods&quot;</span>)</span>
+<span id="cb1-28"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-28" tabindex="-1"></a>    }</span>
+<span id="cb1-29"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-29" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="st">&quot;impute&quot;</span> <span class="sc">%in%</span> <span class="fu">rownames</span>(<span class="fu">installed.packages</span>())) {</span>
+<span id="cb1-30"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-30" tabindex="-1"></a>      <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>,</span>
+<span id="cb1-31"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-31" tabindex="-1"></a>                            <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-32"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-32" tabindex="-1"></a>        <span class="fu">install.packages</span>(<span class="st">&quot;BiocManager&quot;</span>)</span>
+<span id="cb1-33"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-33" tabindex="-1"></a>      BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="st">&quot;impute&quot;</span>)</span>
+<span id="cb1-34"><a href="move-the-exercises-to-their-own-workbooks.html#cb1-34" tabindex="-1"></a>    }</span></code></pre></div>
+<p>Once you have run all these lines of code, please make sure that all the packages have been properly installed. They should all be listed in the “Packages” tab (bottom right hand quadrant of R Studio):
+<img src="imgs/R_Packages.png" alt="Screenshot of installed packages" /></p>
+</div>
+</div>
+<div id="python" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Python<a href="move-the-exercises-to-their-own-workbooks.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Install Python</p>
+<p>Open your Terminal, type in “python” and press enter. Type in “2+2” and press enter, type in “print(‘Hello World’)” and press enter, type in “pwd” and press enter. Close your terminal window.</p>
+<div class="float">
+<img src="imgs/Python_Hello.png" alt="Hello World in Python" />
+<div class="figcaption">Hello World in Python</div>
+</div>
+<p>What just happened? Same commands worked as in R, but the commands from bash did not work. Python and R have a lot of overlap. Generally, Python is less user friendly (but still accessible) but far more powerful and flexible. Most neural networks are written in Python. R is more user friendly, less powerful, but has more detailed and useful prebuilt statistical functions. It is important to know both in order to be able to use the right tool for the right job.</p>
+<div id="python-guis" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Python GUIs<a href="move-the-exercises-to-their-own-workbooks.html#python-guis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are more Python GUIs than there are R. The two main ones are VSCode and Pycharm. Why is there not one best. There is no one best solution. Benefits of VSCode, benefits of Pycharm. Third option of Juypter notebooks. Course teaches VSCode because it helps students become more comfortable with advanced computing environments that don’t have as user friendly of GUIs - such as Imperial’s High Performance Computing Server.</p>
+<p>Install Python GUIs</p>
+<p>As there are a few Python GUIs to introduce, we will come back to them later in their own dedicated section. A note on Python packages: As they are less user friendly to install, we will not be providing you with all of the packages upfront and will instead help you install them during practical sessions.</p>
+</div>
+</div>
+<div id="sql" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> SQL<a href="move-the-exercises-to-their-own-workbooks.html#sql" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>SQL definition. Types of SQL. We use X</p>
+<p>Install SQL</p>
+<p>SQL exercise</p>
+<p>Install DBeaver</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="imgs/DBeaver/Beaver.png" alt="Downloading R from the CRAN" width="100%" />
+<p class="caption">
+Figure 5.2: Downloading R from the CRAN
+</p>
+</div>
+<p>DBeaver Exercise also in its own section.</p>
+</div>
+<div id="git" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Git<a href="move-the-exercises-to-their-own-workbooks.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Git definition. Types of version control language. Git is most common and industry standard.</p>
+<p>Install Github</p>
+<p>Make a repository.</p>
+<p>Install Git</p>
+<p>Clone repository from the command line</p>
+<p>Add a file to the Github page manually. Git pull and the file shows up.</p>
+<p>Note about alternates to Github</p>
+<p>Install Github Desktop</p>
+<p>Add a file to the Github page manually. Use github desktop to get into your folder.</p>
+<p>Could have another github with the materials to download?</p>
+</div>
+<div id="other-programming-languages" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Other Programming Languages<a href="move-the-exercises-to-their-own-workbooks.html#other-programming-languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Alan Turing universial programming languages.</p>
+<p>There are a multitude of other programming languages that you may have heard of. Optimized to make different popular tasks easier. While the syntax varies drastically between languages, the core fundamentals are the same. Learning the most popular and user friendly languages (R, Python, and SQL) is a great way to start your programming journey.</p>
+<p>Full stack developers. Front end vs back end. Outside of the scope of this course. As is advanced computer science</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="setting-up-your-computer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="prep-material.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-setting-up-comp.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["HDA-Precourse-Material.pdf", "HDA-Precourse-Material.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

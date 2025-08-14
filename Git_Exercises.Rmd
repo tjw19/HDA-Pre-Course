@@ -1,0 +1,46 @@
+# Git Exercise
+
+Create separate exercise where they create a file on their computer in their github repo and push it to the website version. Could have them pull a file from github, make changes on local, push back, and then create a new file, then push.
+
+Can be a basic version of the Imperial intro to Github.
+
+
+## Installing Git, Github, and Github Desktop
+
+
+## Github
+
+
+
+## Git
+
+
+
+## Github Desktop
+
+
+
+
+## from setting up comp
+
+Put back in when have time.
+Make a repository.
+
+
+
+Clone repository from the command line
+
+Add a file to the Github page manually. Git pull and the file shows up.
+
+
+
+Note about alternates to Github
+
+
+Install Github Desktop
+
+Add a file to the Github page manually. Use github desktop to get into your folder.
+
+
+Could have another github with the materials to download?
+

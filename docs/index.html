@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Pre Course Material</title>
+  <meta name="description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Pre Course Material" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/imgs/Imperial.png" />
+  <meta property="og:description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pre Course Material" />
+  
+  <meta name="twitter:description" content="This is the precourse material for the Health Data Analytics and Machine Learning MSc at Imperial College London" />
+  <meta name="twitter:image" content="/imgs/Imperial.png" />
+
+<meta name="author" content="Health Data Analytics and Machine Learning" />
+
+
+<meta name="date" content="2025-08-14" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="term-dates-and-time-requirements.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">HDA Precourse Material</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to HDA</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#what-makes-hda-unique"><i class="fa fa-check"></i><b>0.1</b> What Makes HDA Unique</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#program-overview"><i class="fa fa-check"></i><b>0.2</b> Program Overview</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#getting-ready-for-the-program"><i class="fa fa-check"></i><b>0.3</b> Getting Ready For the Program</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#iterative-project-development"><i class="fa fa-check"></i><b>0.4</b> Iterative Project Development</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html"><i class="fa fa-check"></i><b>1</b> Term Dates and Time Requirements</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="term-dates-and-time-requirements.html"><a href="term-dates-and-time-requirements.html#imperial-college-term-dates"><i class="fa fa-check"></i><b>1.1</b> Imperial College Term Dates</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="general-advice.html"><a href="general-advice.html"><i class="fa fa-check"></i><b>2</b> General Advice</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="general-advice.html"><a href="general-advice.html#advice-from-the-teaching-team"><i class="fa fa-check"></i><b>2.1</b> Advice from the Teaching Team</a></li>
+<li class="chapter" data-level="2.2" data-path="general-advice.html"><a href="general-advice.html#advice-from-previous-hda-students"><i class="fa fa-check"></i><b>2.2</b> Advice from previous HDA students</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="general-advice.html"><a href="general-advice.html#before-starting-the-course"><i class="fa fa-check"></i><b>2.2.1</b> Before starting the course</a></li>
+<li class="chapter" data-level="2.2.2" data-path="general-advice.html"><a href="general-advice.html#throughout-the-course"><i class="fa fa-check"></i><b>2.2.2</b> Throughout the course</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html"><i class="fa fa-check"></i><b>3</b> Getting to Know Your Computer</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#Computer-Specifications"><i class="fa fa-check"></i><b>3.1</b> Computer Specifications</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#mac-computer-specifications"><i class="fa fa-check"></i><b>3.1.1</b> Mac Computer Specifications</a></li>
+<li class="chapter" data-level="3.1.2" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#windows-computer-specifications"><i class="fa fa-check"></i><b>3.1.2</b> Windows Computer Specifications</a></li>
+<li class="chapter" data-level="3.1.3" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#linux-computer-specifications"><i class="fa fa-check"></i><b>3.1.3</b> Linux Computer Specifications</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#the-black-box"><i class="fa fa-check"></i><b>3.2</b> The Black Box</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="getting-to-know-your-computer.html"><a href="getting-to-know-your-computer.html#demystifying-the-terminal"><i class="fa fa-check"></i><b>3.2.1</b> Demystifying the Terminal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html"><i class="fa fa-check"></i><b>4</b> Setting Up Your Computer</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#bash"><i class="fa fa-check"></i><b>4.1</b> Bash</a></li>
+<li class="chapter" data-level="4.2" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#r"><i class="fa fa-check"></i><b>4.2</b> R</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#using-a-gui"><i class="fa fa-check"></i><b>4.2.1</b> Using a GUI</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#python"><i class="fa fa-check"></i><b>4.3</b> Python</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#python-ides"><i class="fa fa-check"></i><b>4.3.1</b> Python IDEs</a></li>
+<li class="chapter" data-level="4.3.2" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#juypter-notebook-exercise"><i class="fa fa-check"></i><b>4.3.2</b> Juypter Notebook Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#sql"><i class="fa fa-check"></i><b>4.4</b> SQL</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#dbeaver"><i class="fa fa-check"></i><b>4.4.1</b> DBeaver</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#git"><i class="fa fa-check"></i><b>4.5</b> Git</a></li>
+<li class="chapter" data-level="4.6" data-path="setting-up-your-computer.html"><a href="setting-up-your-computer.html#other-programming-languages"><i class="fa fa-check"></i><b>4.6</b> Other Programming Languages</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="prep-material.html"><a href="prep-material.html"><i class="fa fa-check"></i><b>5</b> Prep Material</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="prep-material.html"><a href="prep-material.html#molecular-biology"><i class="fa fa-check"></i><b>5.1</b> Molecular Biology</a></li>
+<li class="chapter" data-level="5.2" data-path="prep-material.html"><a href="prep-material.html#quantitative-skills"><i class="fa fa-check"></i><b>5.2</b> Quantitative Skills</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="prep-material.html"><a href="prep-material.html#math"><i class="fa fa-check"></i><b>5.2.1</b> Math</a></li>
+<li class="chapter" data-level="5.2.2" data-path="prep-material.html"><a href="prep-material.html#linear-algebra"><i class="fa fa-check"></i><b>5.2.2</b> Linear Algebra</a></li>
+<li class="chapter" data-level="5.2.3" data-path="prep-material.html"><a href="prep-material.html#statistics"><i class="fa fa-check"></i><b>5.2.3</b> Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="prep-material.html"><a href="prep-material.html#programming"><i class="fa fa-check"></i><b>5.3</b> Programming</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="prep-material.html"><a href="prep-material.html#other-practice-platforms"><i class="fa fa-check"></i><b>5.3.1</b> Other Practice Platforms</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="prep-material.html"><a href="prep-material.html#fun-readings"><i class="fa fa-check"></i><b>5.4</b> Fun Readings</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="prep-material.html"><a href="prep-material.html#blogs"><i class="fa fa-check"></i><b>5.4.1</b> Blogs</a></li>
+<li class="chapter" data-level="5.4.2" data-path="prep-material.html"><a href="prep-material.html#books"><i class="fa fa-check"></i><b>5.4.2</b> Books</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="reading-list.html"><a href="reading-list.html"><i class="fa fa-check"></i><b>6</b> Reading List</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="reading-list.html"><a href="reading-list.html#statistics-1"><i class="fa fa-check"></i><b>6.1</b> Statistics</a></li>
+<li class="chapter" data-level="6.2" data-path="reading-list.html"><a href="reading-list.html#programming-1"><i class="fa fa-check"></i><b>6.2</b> Programming</a></li>
+<li class="chapter" data-level="6.3" data-path="reading-list.html"><a href="reading-list.html#epidemiology"><i class="fa fa-check"></i><b>6.3</b> Epidemiology</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="faq.html"><a href="faq.html"><i class="fa fa-check"></i><b>7</b> FAQ</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="faq.html"><a href="faq.html#do-you-have-any-suggestions-for-finding-accommodation-in-london"><i class="fa fa-check"></i><b>7.1</b> 1. Do you have any suggestions for finding accommodation in London?</a></li>
+<li class="chapter" data-level="7.2" data-path="faq.html"><a href="faq.html#how-much-money-will-i-need-to-live-and-study-in-london-for-a-year"><i class="fa fa-check"></i><b>7.2</b> 2. How much money will I need to live and study in London for a year?</a></li>
+<li class="chapter" data-level="7.3" data-path="faq.html"><a href="faq.html#what-is-my-tuition-fee-status"><i class="fa fa-check"></i><b>7.3</b> 3. What is my tuition fee status?</a></li>
+<li class="chapter" data-level="7.4" data-path="faq.html"><a href="faq.html#how-and-when-should-i-send-official-documents-e.g.-degree-certificates"><i class="fa fa-check"></i><b>7.4</b> 4. How and when should I send official documents (e.g. degree certificates)?</a></li>
+<li class="chapter" data-level="7.5" data-path="faq.html"><a href="faq.html#when-does-the-course-start"><i class="fa fa-check"></i><b>7.5</b> 5. When does the course start?</a></li>
+<li class="chapter" data-level="7.6" data-path="faq.html"><a href="faq.html#im-an-international-student-what-else-should-i-consider-or-do-before-my-arrival"><i class="fa fa-check"></i><b>7.6</b> 6. I’m an international student – what else should I consider or do before my arrival?</a></li>
+<li class="chapter" data-level="7.7" data-path="faq.html"><a href="faq.html#where-does-teaching-take-place"><i class="fa fa-check"></i><b>7.7</b> 7. Where does teaching take place?</a></li>
+<li class="chapter" data-level="7.8" data-path="faq.html"><a href="faq.html#do-you-have-a-reading-list-of-books-to-prepare-for-the-course"><i class="fa fa-check"></i><b>7.8</b> 8. Do you have a reading list of books to prepare for the course?</a></li>
+<li class="chapter" data-level="7.9" data-path="faq.html"><a href="faq.html#is-there-other-preparation-that-i-should-do-before-starting-the-course"><i class="fa fa-check"></i><b>7.9</b> 9. Is there other preparation that I should do before starting the course?</a></li>
+<li class="chapter" data-level="7.10" data-path="faq.html"><a href="faq.html#will-i-need-to-buy-a-calculator"><i class="fa fa-check"></i><b>7.10</b> 10. Will I need to buy a calculator?</a></li>
+<li class="chapter" data-level="7.11" data-path="faq.html"><a href="faq.html#what-books-do-i-need-to-buy-for-the-course"><i class="fa fa-check"></i><b>7.11</b> 11. What books do I need to buy for the course?</a></li>
+<li class="chapter" data-level="7.12" data-path="faq.html"><a href="faq.html#do-i-need-to-choose-my-own-summer-project-topic"><i class="fa fa-check"></i><b>7.12</b> 12. Do I need to choose my own summer project topic?</a></li>
+<li class="chapter" data-level="7.13" data-path="faq.html"><a href="faq.html#who-should-i-contact-if-i-have-any-further-questions"><i class="fa fa-check"></i><b>7.13</b> 13. Who should I contact if I have any further questions?</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="contact-info.html"><a href="contact-info.html"><i class="fa fa-check"></i><b>8</b> Course Contact Information</a></li>
+<li class="chapter" data-level="9" data-path="mandatory-training.html"><a href="mandatory-training.html"><i class="fa fa-check"></i><b>9</b> Mandatory Training</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="mandatory-training.html"><a href="mandatory-training.html#data-protection-awareness"><i class="fa fa-check"></i><b>9.1</b> Data Protection Awareness</a></li>
+<li class="chapter" data-level="9.2" data-path="mandatory-training.html"><a href="mandatory-training.html#plagiarism-awareness"><i class="fa fa-check"></i><b>9.2</b> Plagiarism Awareness</a></li>
+<li class="chapter" data-level="9.3" data-path="mandatory-training.html"><a href="mandatory-training.html#attributes-and-aspirations-recommended"><i class="fa fa-check"></i><b>9.3</b> Attributes and Aspirations (Recommended)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html"><i class="fa fa-check"></i><b>10</b> Installing R and R Studio</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-R"><i class="fa fa-check"></i><b>10.1</b> Installing R</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#mac-users"><i class="fa fa-check"></i><b>10.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="10.1.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#windows-users"><i class="fa fa-check"></i><b>10.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-Rstudio"><i class="fa fa-check"></i><b>10.2</b> Installing RStudio</a></li>
+<li class="chapter" data-level="10.3" data-path="installing-r-and-r-studio.html"><a href="installing-r-and-r-studio.html#installing-packages"><i class="fa fa-check"></i><b>10.3</b> Installing Packages</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html"><i class="fa fa-check"></i><b>11</b> Installing Python, Anaconda, and VSCode</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#installing-python"><i class="fa fa-check"></i><b>11.1</b> Python</a></li>
+<li class="chapter" data-level="11.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#installing-python-ides"><i class="fa fa-check"></i><b>11.2</b> Python IDEs</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#anaconda"><i class="fa fa-check"></i><b>11.2.1</b> Anaconda</a></li>
+<li class="chapter" data-level="11.2.2" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#juypter-notebook-juypter-lab-pycharm-and-spyder"><i class="fa fa-check"></i><b>11.2.2</b> Juypter Notebook, Juypter Lab, Pycharm, and Spyder</a></li>
+<li class="chapter" data-level="11.2.3" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#vs-code"><i class="fa fa-check"></i><b>11.2.3</b> VS Code</a></li>
+<li class="chapter" data-level="11.2.4" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#pycharm-vs.-vs-code"><i class="fa fa-check"></i><b>11.2.4</b> Pycharm vs. VS Code</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="installing-python-anaconda-and-vscode.html"><a href="installing-python-anaconda-and-vscode.html#package-installation"><i class="fa fa-check"></i><b>11.3</b> Package Installation</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html"><i class="fa fa-check"></i><b>12</b> Installing MySQL and DBeaver</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#installing-sql"><i class="fa fa-check"></i><b>12.1</b> MySQL Installation</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#mac-users-1"><i class="fa fa-check"></i><b>12.1.1</b> Mac users</a></li>
+<li class="chapter" data-level="12.1.2" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#windows-users-1"><i class="fa fa-check"></i><b>12.1.2</b> Windows users</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#installing-dbeaver"><i class="fa fa-check"></i><b>12.2</b> DBeaver Installation</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="installing-mysql-and-dbeaver.html"><a href="installing-mysql-and-dbeaver.html#testing-out-dbeaver"><i class="fa fa-check"></i><b>12.2.1</b> Testing out DBeaver</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html"><i class="fa fa-check"></i><b>13</b> Installing Git, Github, and Github Desktop</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#installing-git"><i class="fa fa-check"></i><b>13.1</b> Git</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#note-for-mac-users"><i class="fa fa-check"></i><b>13.1.1</b> Note for Mac Users</a></li>
+<li class="chapter" data-level="13.1.2" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#updating-git"><i class="fa fa-check"></i><b>13.1.2</b> Updating Git</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#installing-github"><i class="fa fa-check"></i><b>13.2</b> Github</a></li>
+<li class="chapter" data-level="13.3" data-path="installing-git-github-and-github-desktop.html"><a href="installing-git-github-and-github-desktop.html#github-desktop"><i class="fa fa-check"></i><b>13.3</b> Github Desktop</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="change-log.html"><a href="change-log.html"><i class="fa fa-check"></i><b>14</b> Change Log</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="change-log.html"><a href="change-log.html#v.0.0"><i class="fa fa-check"></i><b>14.1</b> v.0.0</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="tjw19"</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Pre Course Material</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Pre Course Material</h1>
+<p class="author"><em>Health Data Analytics and Machine Learning</em></p>
+<p class="date"><em>2025-08-14</em></p>
+</div>
+<div id="welcome-to-hda" class="section level1 unnumbered hasAnchor">
+<h1>Welcome to HDA<a href="index.html#welcome-to-hda" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Congratulations on your acceptance to the Health Data Analytics and Machine Learning (HDA) MSc at Imperial College London. Your impressive transcripts, CV, personal statement, and references stood out from well over 700 other applicants in a blind selection process. Each year we are excited to welcome a diverse cohort of exceptional candidates from all over the world. Our program is committed to making this formative year in your life as enjoyable, educational, and memorable as possible.</p>
+<p>This pre-course guide will ensure that you are set up for success. It provides an introduction to the program, key term dates, general advice, pre-course instructions, and answers for some frequently asked questions.</p>
+<div id="what-makes-hda-unique" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> What Makes HDA Unique<a href="index.html#what-makes-hda-unique" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>The students</strong> Each cohort is diverse and different. We accept candidates from a wide range of educational backgrounds such as biology, math, medicine, computer science, and more. Some have just graduated, some have substantial professional experience, and others already hold MSc or PHD degrees. Our students have been from a wide range of age, nationalities, and cultures. They typically have had vastly different life experiences. The only similarities between our students is that they are exceptional, open minded, and hard working. This diversity is a major strength of our program. The students benefit from each others perspective. The instructors get to engage with new ideas each year. Group research projects can achieve holistic and novel solutions.</p>
+<p><strong>The multidisciplinary approach</strong> Health data poses the biggest of big data challenges. Attempting to find causal signals of disease from a lifetime’s worth of external exposures (pollution, stress, early life gender identity, etc.) or to identify molecular signatures of heterogeneous disease phenotypes requires more than just advanced analytical techniques. The challenge requires a rigorous and formal scientific approach which leverages transferable high performance computing and advanced statistical, machine learning, and AI methodology to find the signal through the noise. Possessing a core competency in a relevant domain such as molecular biology is necessary to ensure interpretable, actionable, and impactful solutions.</p>
+<p><strong>The hands-on application with real data</strong> Real data is messy and real world problems do not have straight forward solutions. Attempting to solve problems without known solutions is often an unique experience for students. Through closely supervised projects in Term 2 and Term 3, you will get the experience of handling unexpected issues, formulating creative solutions, and understanding unexpected results while performing novel, cutting-edge research with real world clinical data.</p>
+<p>These unique circumstances poses their own challenge: How to design a course that covers a wide range of advanced topics to a level that is rigorous enough for those familiar with the topic but accessible enough for those new to the material?</p>
+</div>
+<div id="program-overview" class="section level2 hasAnchor" number="0.2">
+<h2><span class="header-section-number">0.2</span> Program Overview<a href="index.html#program-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>HDA is split into four components. The pre-course material defines the scope of the course and provides conceptual introductions to important core concepts. Term 1 up-skills the cohort and establishes the base competency needed for more advanced approaches. Optional short courses in Biology, Python, and Math are available. At this point, every student has the same multidisciplinary base skill set in coding, statistics, molecular biology, research, and data science. Term 2 builds on that base to learn and apply cutting-edge analytical methodology. Term 3 pairs each student with a world leading research team to design, implement, and report a novel solution to a real-world scientific issue. This capstone project offers an opportunity to demonstrate the skillset from the course and your new ability as an analytical expert.</p>
+<p>Each course broadly follows the format of a 1.5-2 hour theoretical lecture in the morning followed by a 3 hour afternoon practical session to apply the subject of the lecture. There are optional weekly conceptual quizzes and ungraded midterms to help you figure out which subjects need more of your attention.</p>
+</div>
+<div id="getting-ready-for-the-program" class="section level2 hasAnchor" number="0.3">
+<h2><span class="header-section-number">0.3</span> Getting Ready For the Program<a href="index.html#getting-ready-for-the-program" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Consistency is key. HDA requires a sustained effort throughout the entirety of the program. This requires prioritization and a manageable work load. You will be studying several courses at once, have a week of exams, and will be exploring your own research ideas. There will always be more work that you could do, another subject to review, or another line of code to write. Burning yourself out will lead to worse grades, learning outcomes, and enjoyment than a committed, organized, and achievable approach.</p>
+<p>Don’t panic. Don’t feel that you need to be an expert in the subjects you will be taught before you arrive. A large number of the HDA cohorts have not been provided pre-course material and have performed quite well. Student feedback was that a gentle conceptual introduction to the core themes of the course would have made new or advanced topics more easy to digest.</p>
+<p>Please spend 30 minutes to an hour, 5-6 days a week, reviewing the suggested preparatory material. Note that we are not asking you to spend 300 hours, cover a certain amount of material, or vary your effort by when you receive this guide. Try to identify which areas you know the least and begin to get familiar with the subjects. Adopt a targeted approach on a small concept to make the most of each study session. For example: don’t sit down to study linear algebra, but do sit down to study vectors (a concept within linear algebra). Establishing the good habit of consistent and manageable effort is just as important as the material you will cover.</p>
+</div>
+<div id="iterative-project-development" class="section level2 hasAnchor" number="0.4">
+<h2><span class="header-section-number">0.4</span> Iterative Project Development<a href="index.html#iterative-project-development" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Most softwares, research projects, and programs adopt iterative project development. This is why there are multiple versions of software. This guide also has versions. Please see the <a href="change-log.html#change-log">change log</a> for details on what has changed in each version update.</p>
+<p>The current version of this guide is <strong>v.0.0</strong></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="term-dates-and-time-requirements.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

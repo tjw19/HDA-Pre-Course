@@ -1,0 +1,154 @@
+# Things to add to the book
+
+Add in a bit about iterative project development in the introduction
+
+Add in a version update log page
+
+More detailed breakdown of Datacamp on its own page
+
+Turn Prep material into something about introduce topics
+
+Then have a next chapter on more info? Or have a more info section in each topic? -- probably this
+
+Add in a guide about what to do if you do forget your password for mySQL.
+
+DBeaver exercise to the setting-up-comp?
+
+course reviews
+
+exercises for all of the IDEs
+- have in the programming prep material section
+
+a full guide to setting up visual studio for the first time with all the bells and whistles
+
+### Datacamp
+
+Useful courses for the first term (if you complete all of these then you will not struggle with any of the technical components of the course. If you complete none, then you will still have the opportunity to start at the beginning, but will have a harder learning challenge.)
+
+* [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+* [Intermediate R](https://www.datacamp.com/courses/intermediate-r)
+
+Intro Python
+
+Intro SQL
+
+Intermediate SQL (first chapter)
+
+Git
+
+Command Line
+
+
+Useful courses to have completed by the start of the second term
+
+
+
+Useful courses to have completed by the start of the third term
+
+
+## to prep material
+
+### Programming Videos
+
+
+## Organization
+
+### Iterative Project Management
+
+
+### Note Organization Strategies
+
+
+### Goal Setting
+
+
+## in math 
+
+### Functions
+
+Linear vs non-linear
+
+Log and exponent
+
+concave vs convex
+
+Exponential (square vs cubed)
+
+### Optimization
+
+Optimization
+
+Loss function
+
+Derivatives
+
+Partial Derivatives
+
+x
+
+### Linear Algebra
+
+Vectors and Matrices
+
+Vector and Matrix Operations
+
+Dot product
+
+Orthogonal
+
+PCA
+
+
+## Add to biology
+
+Youtube videos on omics, molecular biology, genetics
+
+### Biology
+
+### Genetics
+
+
+
+### Molecular Biology
+
+### OMICs
+
+
+### In Depth Resources
+
+Great resources to solidify and extend your learning:
+Videos:
+-Crash course chemistry: https://www.pbslearningmedia.org/collection/crash-course/t/crash-course-chemistry/
+-Crash course biology: https://www.pbslearningmedia.org/collection/crash-course/t/crash-course-biology/
+Books:
+-An Owner's Guide to the Human Genome: an introduction to human population genetics, variation, and disease by Prof. Jonathan Pritchard (Stanford University): https://web.stanford.edu/group/pritchardlab/HGbook.html
+-The Oxford University Biochemistry Department has a comprehensive list of recommendations spanning general to advanced books: https://www.bioch.ox.ac.uk/recommended-reading-list
+
+
+## math
+
+Find something on log vs exponent
+
+add the cartoon guides as their own section
+
+
+[3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
+
+
+stats -- add in probability distribution and central limit theorem
+
+### deep dive
+
+StatQuest with Josh Stamer
+
+[Logistic Regression](https://www.youtube.com/watch?v=yIYKR4sgzI8&list=PLblh5JKOoLUKxzEP5HA2d-Li7IJkHfXSe)
+
+
+
+## add deep dive section back in and clean up
+
+Add UKB data protection to Mandatory training -- figure out the last thing and starfish -- maybe its own section?
+
+Have a section on Imperial resources -- gradcracker, etc.
+
+

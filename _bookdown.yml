@@ -1,0 +1,23 @@
+book_filename: HDA-Precourse-Material
+delete_merged_file: true
+output_dir: docs
+rmd_files:
+- index.Rmd
+- 01-keyDates.Rmd
+- 02-general-advice.Rmd
+- Know-Comp.Rmd
+- 03-setting-up-comp.Rmd
+- 04-Prep-Material.Rmd
+- 06-reading-list.Rmd
+- 08-FAQ.Rmd
+- 09-Course-Contacts.Rmd
+- 10-Mandatory-Training.Rmd
+- Installing_R.Rmd
+- Installing_Python.Rmd
+- Installing_MySQL.Rmd
+- Installing_Git.Rmd
+- change-log.Rmd
+language:
+  ui:
+    chapter_name: 'Chapter '
+new_session: true
